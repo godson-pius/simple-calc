@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="wrapper w-full">
+      <!-- Start header -->
+      <header class="text-center p-4 bg-sky-500 text-white">
+        <h1 class="text-xl">Js Calculator</h1>
+      </header>
+      <!-- End header -->
+
+      <!-- Start display Ui -->
+      <section class="w-full flex justify-center mt-32">
+        <div id="display" class="bg-gray-200 border-2 border-white shadow-lg w-60 p-2 text-right text-2xl font-bold rounded-xl">0</div>
+      </section>
+      <!-- end display Ui -->
+
+      <!-- Start Calculator design -->
+      <div class="calculator w-full flex justify-center gap-3 mt-4">
+        <!-- numbers -->
+        <div class="numbers grid grid-cols-3 gap-5">
+          <button class="bg-gray-300 p-4 rounded hover:bg-sky-300 duration-700 hover:scale-105 hover:shadow-lg hover:text-white hover:font-bold">1</button>
+          <button class="bg-gray-300 p-4 rounded hover:bg-sky-300 duration-700 hover:scale-105 hover:shadow-lg hover:text-white hover:font-bold">2</button>
+          <button class="bg-gray-300 p-4 rounded hover:bg-sky-300 duration-700 hover:scale-105 hover:shadow-lg hover:text-white hover:font-bold">3</button>
+          <button class="bg-gray-300 p-4 rounded hover:bg-sky-300 duration-700 hover:scale-105 hover:shadow-lg hover:text-white hover:font-bold">4</button>
+          <button class="bg-gray-300 p-4 rounded hover:bg-sky-300 duration-700 hover:scale-105 hover:shadow-lg hover:text-white hover:font-bold">5</button>
+          <button class="bg-gray-300 p-4 rounded hover:bg-sky-300 duration-700 hover:scale-105 hover:shadow-lg hover:text-white hover:font-bold">6</button>
+          <button class="bg-gray-300 p-4 rounded hover:bg-sky-300 duration-700 hover:scale-105 hover:shadow-lg hover:text-white hover:font-bold">7</button>
+          <button class="bg-gray-300 p-4 rounded hover:bg-sky-300 duration-700 hover:scale-105 hover:shadow-lg hover:text-white hover:font-bold">8</button>
+          <button class="bg-gray-300 p-4 rounded hover:bg-sky-300 duration-700 hover:scale-105 hover:shadow-lg hover:text-white hover:font-bold">9</button>
+          <div id="clr" class="cursor-pointer bg-red-500 text-white p-4 rounded hover:bg-sky-300 duration-700 hover:scale-105 hover:shadow-lg hover:text-white hover:font-bold">C</div>
+          <button class="bg-gray-300 p-4 rounded hover:bg-sky-300 duration-700 hover:scale-105 hover:shadow-lg hover:text-white hover:font-bold">0</button>
+          <div id="equal" class="cursor-pointer bg-gray-300 p-4 rounded hover:bg-sky-300 duration-700 hover:scale-105 hover:shadow-lg hover:text-white hover:font-bold">=</div>
+        </div>
+        <!-- End of numbers -->
+
+        <!-- Operators -->
+        <div class="operators flex flex-col gap-1">
+            <button class="bg-gray-300 p-4 rounded hover:bg-sky-300 duration-700 hover:scale-105 hover:shadow-lg hover:text-white hover:font-bold">+</button>
+            <button class="bg-gray-300 p-4 rounded hover:bg-sky-300 duration-700 hover:scale-105 hover:shadow-lg hover:text-white hover:font-bold">-</button>
+            <button class="bg-gray-300 p-4 rounded hover:bg-sky-300 duration-700 hover:scale-105 hover:shadow-lg hover:text-white hover:font-bold">/</button>
+            <button class="bg-gray-300 p-4 rounded hover:bg-sky-300 duration-700 hover:scale-105 hover:shadow-lg hover:text-white hover:font-bold">*</button>
+            <button class="bg-gray-300 p-4 rounded hover:bg-sky-300 duration-700 hover:scale-105 hover:shadow-lg hover:text-white hover:font-bold">%</button>
+        </div>
+        <!-- end operators -->
+
+      </div>
+      <!-- End calculator design -->
+    </div>
+
+    <script src="./js/tailwind.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
